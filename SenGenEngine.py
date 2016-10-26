@@ -105,7 +105,6 @@ class SenGenEngine():
                                 resource = val["resources"][i]
                                 resourceval.append({'name': resource["resourcesnode"]["name"],
                                             'path': resource["resourcesnode"]["path"],
-                                            'unit': resource["resourcesnode"]["unit"],
                                             'data_type': resource["resourcesnode"]["data_type"],
                                             'type': resource["resourcesnode"]["type"]})
                                 if resourceval[i]["type"][:8] == "ipso.sen":
