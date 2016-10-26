@@ -121,23 +121,33 @@ class SenGenEngine():
     def update_dtset(self):
         """query rd for node urls"""
         nodes = self.get_nodes()
-        sensor_types = {'illuminance':'lux','temperature':'celsius','humidity':'%'} 
+        sensor_types = {'illuminance':'lux','temperature':'celsius','humidity':'%','actuator':'0-1'} 
         for sensor_type, unit in sensor_types.items():
 			for node in nodes:
 				for idx,resourcenode in enumerate(node['resources']):
 					if resourcenode['type'][:8] == "ipso.sen":
 						data = requests.get("http://"+node['ip']+":"+node['port']+resourcenode['path'])
-						try:
-							sen_value = data.json()[sensor_type]
-							timestamp = data.json()['timestamp']
-							"""TO FIX: insert positions in Syndesi an put real values in call"""
-							insert_dtset_value_response = requests.get(self.API_BASE_URI + "insertValue.php?node_name=" +node['node_id']+ "&resource_name=" +sensor_type+ "+at+" +node['node_id']+ "&value=" +str(sen_value)+ "&unit=" +unit+ "&timestamp=" +resourcenode['timestamp']+"&pos_x=0&pos_y=0&pos_z=0")
-							insert_dtset_value_response.raise_for_status()
-							#print ("inserted " + node['node_id'] + " with " + sen_value)
-						except:
-							print datetime.datetime.now()
-							warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
-							traceback.print_exc()
+						if sensor_type == 'actuator':
+							try:
+								update_actuation_state_response = requests.get(self.API_BASE_URI + "updateActuator1Status.php?name=" +node['node_id']+"&status=" +str(data.json['actuation_state']))
+								update_actuation_state_response.raise_for_status()
+							except:
+								print datetime.datetime.now()
+								warnings.warn("could not get " + sensor_type + " state from sensor" + resourcenode['path'][-6:])
+								traceback.print_exc()
+								
+						else
+							try:
+								sen_value = data.json()[sensor_type]
+								timestamp = data.json()['timestamp']
+								"""TO FIX: insert positions in Syndesi an put real values in call"""
+								insert_dtset_value_response = requests.get(self.API_BASE_URI + "insertValue.php?node_name=" +node['node_id']+ "&resource_name=" +sensor_type+ "+at+" +node['node_id']+ "&value=" +str(sen_value)+ "&unit=" +unit+ "&timestamp=" +resourcenode['timestamp']+"&pos_x=0&pos_y=0&pos_z=0")
+								insert_dtset_value_response.raise_for_status()
+								#print ("inserted " + node['node_id'] + " with " + sen_value)
+							except:
+								print datetime.datetime.now()
+								warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+								traceback.print_exc()
                         
         return 0
         
