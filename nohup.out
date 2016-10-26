@@ -1,0 +1,980 @@
+SenGenEngine_Update.py:55: UserWarning: Resourse directory update failed
+  warnings.warn("Resourse directory update failed")
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensoruator1
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensoruator1
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensoruator1
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorGoCs37
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorGoCs37
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorGoCs37
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorSGoBs6
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorSGoBs5
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorSGoBs3
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorSGoBs6
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorSGoBs5
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 134, in update_dtset
+    insert_dtset_value_response = requests.get(self.API_BASE_URI + "insertValue.php?node_name=" +node['node_id']+ "&resource_name=" +sensor_type+ "+at+" +node['node_id']+ "&value=" +str(sen_value)+ "&unit=" +unit+ "&timestamp=" +resourcenode['timestamp']+"&pos_x=0&pos_y=0&pos_z=0")
+TypeError: coercing to Unicode: need string or buffer, NoneType found
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorSGoBs3
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorSGoBs6
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorSGoBs5
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 134, in update_dtset
+    insert_dtset_value_response = requests.get(self.API_BASE_URI + "insertValue.php?node_name=" +node['node_id']+ "&resource_name=" +sensor_type+ "+at+" +node['node_id']+ "&value=" +str(sen_value)+ "&unit=" +unit+ "&timestamp=" +resourcenode['timestamp']+"&pos_x=0&pos_y=0&pos_z=0")
+TypeError: coercing to Unicode: need string or buffer, NoneType found
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorSGoBs3
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+SenGenEngine_Update.py:68: UserWarning: Dataset update failed
+  warnings.warn("Dataset update failed")
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 63, in run_dtset_thread
+    self.update_dtset()
+  File "SenGenEngine_Update.py", line 123, in update_dtset
+    nodes = self.get_nodes()
+  File "SenGenEngine_Update.py", line 85, in get_nodes
+    get_nodes_response = requests.get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='129.194.69.178', port=8111): Max retries exceeded with url: /ero2proxy/service (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7f835580b690>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorSGoAs5
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorSGoAs3
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get illuminance values from sensorSGoAs2
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorSGoAs5
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorSGoAs3
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get temperature values from sensorSGoAs2
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorSGoAs5
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorSGoAs3
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+SenGenEngine_Update.py:139: UserWarning: could not get humidity values from sensorSGoAs2
+  warnings.warn("could not get " + sensor_type + " values from sensor" + resourcenode['path'][-6:])
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 131, in update_dtset
+    sen_value = data.json()[sensor_type]
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 808, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Resource directory automatic update running...
+Dataset automatic update running...
+2016-10-25 11:42:40.401454
+    Resource directory updated
+2016-10-25 11:42:43.531678
+    Dataset updated
+2016-10-25 12:02:40.153158
+    Resource directory updated
+2016-10-25 12:02:47.307648
+    Dataset updated
+2016-10-25 12:22:39.880460
+    Resource directory updated
+2016-10-25 12:22:51.074407
+    Dataset updated
+2016-10-25 12:42:39.605462
+    Resource directory updated
+2016-10-25 12:42:54.766905
+    Dataset updated
+2016-10-25 13:02:39.231985
+    Resource directory updated
+2016-10-25 13:02:58.532263
+    Dataset updated
+2016-10-25 13:22:38.955839
+    Resource directory updated
+2016-10-25 13:23:02.224907
+    Dataset updated
+2016-10-25 13:42:38.675892
+    Resource directory updated
+2016-10-25 13:43:05.996162
+    Dataset updated
+2016-10-25 14:02:38.499115
+    Resource directory updated
+2016-10-25 14:03:09.678921
+    Dataset updated
+2016-10-25 14:22:38.363671
+2016-10-25 14:23:13.753038
+    Dataset updated
+2016-10-25 14:42:38.258223
+2016-10-25 14:43:15.207150
+2016-10-25 14:43:16.608383
+2016-10-25 14:43:18.010107
+2016-10-25 14:43:18.128507
+    Dataset updated
+2016-10-25 15:02:38.044392
+2016-10-25 15:03:19.577501
+2016-10-25 15:03:20.878982
+2016-10-25 15:03:22.180245
+2016-10-25 15:03:22.181215
+    Dataset updated
+2016-10-25 15:22:37.666858
+2016-10-25 15:23:23.446313
+2016-10-25 15:23:24.747973
+2016-10-25 15:23:26.049414
+2016-10-25 15:23:26.268457
+    Dataset updated
+2016-10-25 15:42:37.358107
+2016-10-25 15:43:27.529033
+2016-10-25 15:43:28.831237
+2016-10-25 15:43:30.131990
+2016-10-25 15:43:30.351110
+    Dataset updated
+2016-10-25 16:02:37.204949
+    Resource directory updated
+2016-10-25 16:03:34.124607
+    Dataset updated
+2016-10-25 16:22:36.891589
+    Resource directory updated
+2016-10-25 16:23:36.099425
+    Dataset updated
+2016-10-25 16:42:36.484489
+    Resource directory updated
+2016-10-25 16:43:36.383023
+2016-10-25 16:43:36.478561
+2016-10-25 16:43:36.678997
+2016-10-25 16:43:36.979367
+2016-10-25 16:43:37.086101
+2016-10-25 16:43:37.279900
+2016-10-25 16:43:37.580172
+2016-10-25 16:43:37.680896
+2016-10-25 16:43:37.885531
+2016-10-25 16:43:38.101089
+    Dataset updated
+2016-10-25 17:02:35.634366
+2016-10-25 17:03:38.209586
+2016-10-25 17:22:34.874066
+2016-10-25 17:23:38.671112
+2016-10-25 17:23:38.871543
+2016-10-25 17:23:38.971464
+2016-10-25 17:23:39.272877
+2016-10-25 17:23:39.872834
+2016-10-25 17:23:40.073465
+2016-10-25 17:23:40.172856
+2016-10-25 17:23:40.474025
+2016-10-25 17:23:41.074032
+2016-10-25 17:23:41.274588
+2016-10-25 17:23:41.374433
+2016-10-25 17:23:41.674941
+2016-10-25 17:23:42.012720
+    Dataset updated
+2016-10-25 17:42:34.090243
+2016-10-25 17:43:46.007082
+    Dataset updated
+2016-10-25 18:02:33.254602
+2016-10-25 18:03:50.083004
+    Dataset updated
+2016-10-25 18:22:32.432372
+2016-10-25 18:23:54.157068
+    Dataset updated
+2016-10-25 18:42:31.604625
+2016-10-25 18:43:58.231192
+    Dataset updated
+2016-10-25 19:02:30.873218
+2016-10-25 19:04:02.301554
+    Dataset updated
+2016-10-25 19:22:30.031817
+2016-10-25 19:24:06.378012
+    Dataset updated
+2016-10-25 19:42:29.294176
+2016-10-25 19:44:10.442627
+    Dataset updated
+2016-10-25 20:02:28.472211
+2016-10-25 20:04:14.517359
+    Dataset updated
+2016-10-25 20:22:27.643356
+2016-10-25 20:24:18.596347
+    Dataset updated
+2016-10-25 20:42:26.814097
+2016-10-25 20:44:22.666356
+    Dataset updated
+2016-10-25 21:02:26.080988
+2016-10-25 21:04:26.736206
+    Dataset updated
+2016-10-25 21:22:25.331670
+2016-10-25 21:24:30.801181
+    Dataset updated
+2016-10-25 21:42:24.503948
+2016-10-25 21:44:34.874989
+    Dataset updated
+2016-10-25 22:02:23.665319
+2016-10-25 22:04:38.940087
+    Dataset updated
+2016-10-25 22:22:22.937382
+2016-10-25 22:24:42.915473
+    Dataset updated
+2016-10-25 22:42:22.117729
+2016-10-25 22:44:46.896233
+    Dataset updated
+2016-10-25 23:02:21.269282
+2016-10-25 23:04:50.961937
+    Dataset updated
+2016-10-25 23:22:20.444967
+2016-10-25 23:24:55.029209
+    Dataset updated
+2016-10-25 23:42:19.722053
+2016-10-25 23:44:59.006177
+    Dataset updated
+2016-10-26 00:02:18.991211
+2016-10-26 00:05:03.085124
+    DatasTraceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
+Traceback (most recent call last):
+  File "SenGenEngine_Update.py", line 50, in run_rd_thread
+    self.update_rd()
+  File "SenGenEngine_Update.py", line 165, in update_rd
+    node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
+KeyError: 'Nodes'
