@@ -1,4 +1,5 @@
 #!/bin/bash
 
 git pull origin master
-python SenGenEngine.py
+rm nohup.out
+nohup python SenGenEngine.py&
