@@ -165,12 +165,12 @@ class SenGenEngine():
         for idx, name in enumerate(diff[1]):
             for node in alive_nodes:
                 if name==node['node_id']:
+		    print (self.API_BASE_URI + "insertNode.php?name="+name+"&pos_x="+str(pos_x)+"&pos_y="+str(pos_y)+"&pos_z="+ str(pos_z))
+		    print (self.API_BASE_URI + "getNodes.php?name="+name)
                     pos_x = node['position'][0]
                     pos_y = node['position'][1]
                     pos_z = node['position'][2]
                     insert_node_response = requests.get(self.API_BASE_URI + "insertNode.php?name="+name+"&pos_x="+str(pos_x)+"&pos_y="+str(pos_y)+"&pos_z="+ str(pos_z))
-		    print (self.API_BASE_URI + "insertNode.php?name="+name+"&pos_x="+str(pos_x)+"&pos_y="+str(pos_y)+"&pos_z="+ str(pos_z))
-		    print (self.API_BASE_URI + "getNodes.php?name="+name)
                     insert_node_response.raise_for_status()
                     node_id_in_rd = requests.get(self.API_BASE_URI + "getNodes.php?name="+name).json()['Nodes'][0]['node_id']
                     for idx,resourcenode in enumerate(node['resources']):
