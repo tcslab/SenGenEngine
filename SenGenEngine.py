@@ -133,9 +133,8 @@ class SenGenEngine():
 							except:
 								print datetime.datetime.now()
 								warnings.warn("could not get " + sensor_type + " state from sensor" + resourcenode['path'][-6:])
-								traceback.print_exc()
-								
-						else
+								traceback.print_exc()	
+						else:
 							try:
 								sen_value = data.json()[sensor_type]
 								timestamp = data.json()['timestamp']
