@@ -128,8 +128,7 @@ class SenGenEngine():
 						data = requests.get("http://"+node['ip']+":"+node['port']+resourcenode['path'])
 						if sensor_type == 'actuator':
 							try:
-								print self.API_BASE_URI + "updateActuator1Status.php?name=" +node['node_id']+"&status=" +str(data.json['actuation_state'])
-								update_actuation_state_response = requests.get(self.API_BASE_URI + "updateActuator1Status.php?name=" +node['node_id']+"&status=" +str(data.json['actuation_state']))
+								update_actuation_state_response = requests.get(self.API_BASE_URI + "updateActuator1Status.php?name=" +node['node_id']+"&status=" +(data.json['actuation_state']))
 								update_actuation_state_response.raise_for_status()
 							except:
 								print datetime.datetime.now()
